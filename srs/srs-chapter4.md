@@ -1,0 +1,12 @@
+# Chapter 4: Functional Requirements
+
+The following table outlines the functional requirements for the SmartStream system, prioritized and traced to their original sources and verification methods.
+
+| ID        | Title                          | Description                                                                                                                                         | Priority    | Source                       | Verification                          |
+| :-------- | :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- | :---------- | :--------------------------- | :------------------------------------ |
+| **FR-01** | Role-Based Access Control      | The system shall restrict user access to modules and data based on assigned roles (Director, Manager, Distributor).                                 | P1 – High   | Client WhatsApp Request      | Test Case TC-FR-01 (Security test)    |
+| **FR-02** | Automated Low Stock Alerts     | The system shall automatically generate and send an email/SMS alert to the Stock Manager when a product's quantity falls below a defined threshold. | P1 – High   | Client WhatsApp Request      | Test Case TC-FR-02 (Integration test) |
+| **FR-03** | AI OCR Data Extraction         | The system shall extract product names, quantities, and totals from uploaded invoice images using an AI OCR module.                                 | P2 – Medium | System Analysis / Innovation | Test Case TC-FR-03 (Unit test)        |
+| **FR-04** | Real-time GPS Tracking         | The system shall track and log the real-time GPS coordinates of distributors while they are on an active delivery route.                            | P2 – Medium | Structured Interview         | Test Case TC-FR-04 (System test)      |
+| **FR-05** | Executive Dashboard            | The system shall provide a real-time dashboard for Directors displaying key performance indicators, total inventory value, and daily sales.         | P1 – High   | Client WhatsApp Request      | Test Case TC-FR-05 (UI/UX test)       |
+| **FR-06** | Cloud Disaster Recovery Backup | The system shall automatically backup the MySQL/PostgreSQL database to a secure cloud bucket every 12 hours.                                        | P1 – High   | Client WhatsApp Request      | Test Case TC-FR-06 (DevOps test)      |
